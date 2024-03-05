@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Icono de contacto de Whatsapp */
+.whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+/* Barra de navegación */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+}
+
+header nav {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 12px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* sección "Header" inicio de pág*/
+#hero {
+    text-align: center;
+    padding-top: 250px;
+}
+
+#hero h2 {
+    font-size: 80px;
+    color: #E8F00C;
+    text-decoration: none;
+}
+
+#hero h1 {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero button {
+    font-size: 30px;
+    padding: 10px 28px;
+    background: #E8F00C;
+    color: darkgrey;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-top: 135px;
+}
+
+/* sección de PLANES */
+#planes {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#planes h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+#planes p {
+    font-size: 26px;
+    padding-top: 5px;
+    color: #000;
+}
+
+#planes .fila {
+    display: flex;
+    width: 70%;
+    margin: 0% auto;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+
+#planes .col-plan {
+    position: relative;
+    z-index: 1;
+}
+
+#planes .col-plan h3 {
+    position: absolute;
+    top: 110px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0;
+    color: #E8F00C;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/* sección de DESTINOS */
+#destinos {
+    width: 100%;
+    text-align: center;
+    background: url("../img/bg-destinos.png");
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+#destinos h2 {
+    color: #E8F00C;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+#destinos .fila {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px auto;
+}
+
+#destinos img {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#destinos h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* sección de CONTACTO */
+#contacto {
+    width: 100%;
+    background: #E8F00C;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+#contacto h2 {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#contacto p {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#contacto .fila {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+#contacto .fila input,
+select {
+    width: 335px;
+    height: 40px;
+    color: #8b8b8b;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    border: 2px solid #8b8b8b;
+    border-radius: 5px;
+}
+
+#contacto button {
+    background: #20202073;
+    width: 180px;
+    padding: 10px 28px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Pie de Página */
+footer {
+    background: black;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#copyright {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#copyright p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+}

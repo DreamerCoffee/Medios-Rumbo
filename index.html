@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolás</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="icon" href="img/brujula.png">
+</head>
+<body>
+
+    <!-- Botón de Whatsapp -->
+    <a href="https://walink.co/a5efbe" class="whatsapp" target="_blank">
+        <img src="img/whatsapp.png" alt="Imagen Whatsapp">
+    </a>
+
+    <!-- INCIO -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo Rumbo">
+            </a>
+            <ul class="lista">
+                <a href="#">Inicio</a>
+                <a href="#planes">Planes</a>
+                <a href="#destinos">Destinsos</a>
+                <a href="#contacto">Contacto</a>
+            </ul>
+        </nav>
+        <!-- Titulo de inicio -->
+        <div id="hero">
+            <img src="img/brujula.png" alt="Brujula">
+            <h2>RUMBO</h2>
+            <h1>EL SITIO WEB DE TURISMO IDEAL PARA TI</h1>
+            <button class="btt"><strong>EMPEZAR</strong></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección "PLANES" -->
+        <section id="planes">
+            <h2>PLANES</h2>
+            <p>
+                En <strong>RUMBO</strong> tenemos los siguientes planes para ti <br>
+                Selecciona el plan que más se ajuste a la experiencia que quieras vivir
+            </p>
+            <div class="fila">
+                <div class="col-plan">
+                    <img src="img/senderismo.png" alt="Senderismo">
+                    <h3>SENDERISMO</h3>
+                    <P>
+                        5 a 8 personas <br>
+                        6 km de ruta <br>
+                        150.000 Pesos <br>
+                        Precio por persona <br>
+                    </P>
+                </div>
+                <div class="col-plan">
+                    <img src="img/canotaje.png" alt="Canotaje">
+                    <h3>CANOTAJE</h3>
+                    <P>
+                        5 a 8 personas <br>
+                        6 km de ruta <br>
+                        150.000 Pesos <br>
+                        Precio por persona <br>
+                    </P>
+                </div>
+                <div class="col-plan">
+                    <img src="img/senderismo.png" alt="Senderismo">
+                    <h3>SENDERISMO</h3>
+                    <P>
+                        5 a 8 personas <br>
+                        6 km de ruta <br>
+                        150.000 Pesos <br>
+                        Precio por persona <br>
+                    </P>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección "DESTINOS" -->
+        <section id="destinos">
+            <h2>DESTINOS</h2>
+            <div class="fila">
+                <div class="col-destino">
+                    <img src="img/cartagena.png" alt="Imegen de Cartagena">
+                    <h3>CARTAGENA</h3>
+                </div>
+                <div class="col-destino">
+                    <img src="img/barranquilla.png" alt="Imegen de Barranquilla">
+                    <h3>BARRANQUILLA</h3>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-destino">
+                    <img src="img/llanos.png" alt="Imegen de lLANOS Orientales">
+                    <h3>LLANOS ORIENTALES</h3>
+                </div>
+                <div class="col-destino">
+                    <img src="img/laguajira.png" alt="Imegen de la Guajira">
+                    <h3>LA GUAKIRA</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección "CONTACTO" -->
+        <section id="contacto">
+            <h2>CONTACTO</h2>
+            <P>
+                Comparte con nosotros tus datos de contacto y te enviaremos<br>
+                toda la información de los medios de pagos.
+            </P>
+            <form action="/datos_de_contacto" method="post">
+                <div class="fila">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres:" required>
+                    <input type="number" id="teléfono" name="teléfono" placeholder="Teléfono:" required>
+                </div>
+                <div class="fila">
+                    <input type="email" id="correo" name="Correo" placeholder="Email:" required>
+                    <input type="text" id="Ciudad" name="ciudad" list="ciudades" placeholder="Ciudad:" required>
+                    <datalist id="ciudades">
+                        <option>Armenia</option>
+                        <option>Barranquilla</option>
+                        <option>Bogotá</option>
+                        <option>Bucaramanga</option>
+                        <option>Calí</option>
+                        <option>Cartagena</option>
+                        <option>Medellín</option>
+                        <option>Manizales</option>
+                        <option>Neiva</option>
+                        <option>Pereira</option>
+                    </datalist>
+                </div>
+            </form>
+            <button class="btt" type="submit">ENVIAR</button>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <section id="copyright">
+            <p>
+                © Todos los derechos reservados<br>
+                contacto@rumbo.com<br>
+                +57 3212444445<br>
+                Cr 90 #93 - 20
+            </p>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

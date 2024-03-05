@@ -1,0 +1,66 @@
+/* Barra de navegación By: Chat GPT xd */
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.lista a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.lista a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.lista a:hover {
+    color: #fff;
+}
+
+@keyframes lineaAnimacion {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 50%;
+    }
+}
+
+/* Botones independientes By: Lan lunn */
+.btt {
+    display: inline-block;
+    transition-duration: $defaultDuration;
+    transition-property: transform;
+
+    @include hideTapHighlightColor();
+    @include hardwareAccel();
+    @include improveAntiAlias();
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
